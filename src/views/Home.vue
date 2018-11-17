@@ -29,6 +29,7 @@
   </div>
 </template>
 <script>
+// const axios = require("axios");
 export default {
   data() {
     return {
@@ -54,17 +55,17 @@ export default {
         }
       }, 500);
       // 发起一个POST请求
-      this.$axios
-        .post("http://tbk.youlegoshop.com/api/index/get_dg_material", {
-          page: 1,
-          cat: "16,18,50102996,50006843,50006842,50340020,50025829,50010788"
-        })
-        .then(function(response) {
-          console.info(response.data);
-        })
-        .catch(function(error) {
-          console.info(error);
-        });
+      // axios
+      //   .post("http://192.168.0.76/tbk/public/index.php/api/index/get_dg_material", {
+      //     page: 1,
+      //     cat: "16,18,50102996,50006843,50006842,50340020,50025829,50010788"
+      //   })
+      //   .then(function(response) {
+      //     console.log(response);
+      //   })
+      //   .catch(function(error) {
+      //     console.log(error);
+      //   });
     }
   }
 };

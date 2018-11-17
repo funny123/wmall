@@ -10,7 +10,12 @@ import { Swipe, SwipeItem } from 'vant';
 import { Lazyload } from 'vant';
 import { List } from 'vant';
 import { Cell, CellGroup } from 'vant';
+import {
+  CouponCell,
+  CouponList
+} from 'vant';
 
+Vue.use(CouponCell).use(CouponList);
 Vue.use(List).use(Cell).use(CellGroup);
 Vue.use(NavBar).use(Toast).use(Swipe).use(SwipeItem).use(Lazyload);
 Vue.use(Tabbar).use(TabbarItem);
