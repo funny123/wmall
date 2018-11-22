@@ -52,7 +52,7 @@ export default {
       this.showList = false;
       this.chosenCoupon = index;
     },
-    onExchange(code) {
+    onExchange() {
       this.coupons.push(coupon);
     }
   }
